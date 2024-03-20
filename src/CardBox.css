@@ -1,0 +1,51 @@
+.card-box {
+    border: 2px solid yellow;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    width: 70%;
+    padding-top: 10px;
+    transition: height 0.5s;
+  }
+  
+  .card-box.extended {
+    height: auto;
+  }
+  
+  .card-header {
+    display: flex;
+  }
+  .card-header h3{
+    position: relative;
+    top:-10px;
+    margin-bottom: 0;
+    margin-left: 20px;
+    font-size: 1.25em;
+  }
+  
+  .toggle-btn {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 2.2em;
+    position:relative;
+    margin-left: auto;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .card-content {
+    overflow: hidden;
+    font-size: 1.25em;
+    margin-left: 20px;
+  }
+  
+  input[type="checkbox"]{
+    display: flex;
+    width: 30px;
+    margin-left: 20px;
+    position: relative;
+    top:5px;
+    outline: 2px solid yellow;
+    accent-color: yellow;
+  }

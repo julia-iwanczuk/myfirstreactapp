@@ -1,0 +1,91 @@
+
+.sliding-component {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    z-index: 999;
+    padding-right: 20px;
+    border: 1px solid yellow;
+    overflow-y: auto;
+}
+.content {
+    padding: 20px;
+}
+
+.content h2 {
+    margin-top: 0;
+    font-size: 1.25em;
+    display: inline-block;
+    width: 97%;
+}
+button.x{
+    display: inline-block;
+    position: absolute;
+    left:92%;
+    top:10px;
+    background-color: transparent;
+    color: yellow;
+    cursor: pointer;
+}
+
+.content textarea{
+    width: 100%;
+    height:100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid yellow;
+    font-size: 1em;
+    
+}
+.checkbox{
+    display: flex;
+    margin-top: 10px;
+}
+.checkbox input{
+    margin-right: 20px;
+}
+.checkbox p{
+    position: relative;
+    top:10px;
+    font-size: 1.125em;
+}
+
+.checkbox input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    display: none;
+}
+
+button.submit  {
+    padding: 8px 16px;
+    border: 1px solid yellow;
+    border-radius: 20px;
+    background-color: transparent;
+    color: yellow;
+    cursor: pointer;
+    font-size: 1.125em;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+.result p {
+    margin: 0;
+    font-size: 1em;
+}
+
+
+button.copy{
+    padding: 8px 16px;
+    border: 1px solid yellow;
+    border-radius: 20px;
+    background-color: transparent;
+    color: yellow;
+    cursor: pointer;
+    font-size: 1.125em;
+    margin-top:10px;
+}

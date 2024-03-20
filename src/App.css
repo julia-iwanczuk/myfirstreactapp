@@ -1,0 +1,296 @@
+/*All*/
+
+*:focus {
+  outline: 4px dotted rgb(243, 29, 83);
+}
+button{
+  border: 0;
+}
+
+a{
+  text-decoration:none;
+}
+
+.icon-top{
+  height:50px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/*Navbar*/
+
+.settings{
+  width:40px;
+  height:40px;
+  position: relative;
+  top:5px;
+}
+.navbar{
+  display: flex;
+  justify-content:space-between;
+  padding: 10px 20px;
+  position: relative;
+  top:10px;
+}
+
+.logo{
+  height: 60px;
+}
+.title {
+  text-align: center;
+  flex:1;
+  margin:0;
+}
+.safe-space {
+  color: white;
+  background-color: #125f81;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  position:relative;
+  text-align: left;
+  padding-left: 20px;
+  font-size: 1.25em;
+}
+input{
+  text-align: left;
+  border: 1px solid yellow;
+  width: 200px; 
+  height: 30px;
+  margin-right: 6px;
+}
+.search{
+  position: relative;
+  top:10px;
+  margin-right: 5px;
+  width: 30px;
+}
+
+.add-font{
+  font-size: 2em;
+}
+
+/*Choose*/
+.option{
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.choose{
+  width: 100%;
+  text-align: center;
+}
+
+/*Teach*/
+
+.options h3{
+  font-size: 1.25em;
+  text-align: left;
+}
+
+.options{
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-around;
+  justify-content: center;
+}
+
+.option-teach{
+  width: 160px;
+  margin-left: 40px;
+  margin-right: 20px;
+}
+
+#pic-option{
+  width: 120px;
+}
+
+.back{
+  background-color: transparent;
+  display: inline-block;
+  margin-left:30px;
+  margin-top:10px;
+  margin-right: 20px;
+  height: 50px;
+}
+
+.want {
+  display: inline-block;
+  position: relative;
+  bottom: 15px;
+  font-size: 1.56em;
+  margin-left: 30px;
+}
+
+
+/*Support*/
+
+.name{
+  display: inline-block;
+  font-size: 1.56em;
+  position: relative;
+  bottom: 15px;
+}
+.carousel{
+  position: relative;
+  top: 20px;
+  margin-right: 100px;
+}
+.carousel-title{
+  position: relative;
+  left:50px;
+  top:10px;
+  font-size: 1.25em;
+}
+
+/*Learn*/
+
+
+
+
+/*Check materials*/
+
+.materials{
+  margin-left: 100px;
+}
+.material{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  margin:0 0 30px;
+  font-size: 1em;
+  border: 1px solid white;
+  width: 80%;
+  height:40px;
+  
+}
+.overlay{
+  z-index: 9999;
+}
+
+.material img{
+  height: 40px;
+  margin-right: 20px;
+}
+
+.material h3{
+  font-size: 1.56em;
+  margin-top:0;
+  margin-bottom: 0;
+  display: inline-block;
+  position: relative;
+}
+
+.next{
+  margin-left: auto;
+}
+
+.guide-title{
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+.onlinetools a{
+  display: block;
+  margin-left: 100px;
+  font-size: 1.25em;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+
+.file-upload {
+  display: flex;
+  justify-content: left;
+  margin-left: 100px;
+}
+
+.drop-area {
+  width: 75%;
+  height: 500px;
+  border: 2px solid white;
+}
+
+.dragging {
+  background-color: rgba(255, 255, 0, 0.1);
+}
+
+.inner-window {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  margin: 10px;
+  border: 2px dashed yellow;
+  text-align: center;
+}
+
+p {
+  font-size: 1.25em;
+  margin-bottom: 50px;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+input[type='file'] {
+  display: none;
+}
+
+.file-upload button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: yellow;
+  border: none;
+  cursor: pointer;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.file-upload button:hover {
+  background-color: #ffd700;
+}
+
+.pdf-preview{
+  display: flex;
+  position: relative;
+  margin-top: 10px;
+  width:90%;
+  height:90%;
+}
+.onlinetools{
+  margin-bottom: 60px;
+}
+
+/*Message*/
+
+.message-description{
+  margin-left: 50px;
+  margin-right: 40px;
+  margin-top: 0px;
+}
+
+h3.message-description{
+  font-size: 1.25em;
+}
+
+@media (max-width:768px){
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .logo{
+    margin-bottom: 10px;
+  }
+  .search-container{
+    margin-top:10px;
+  }
+}
