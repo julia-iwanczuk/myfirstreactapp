@@ -17,7 +17,7 @@
 .rectangle {
     flex: 0 0 calc(100%/3);
     height: 120px; 
-    background-color: #7777775f;
+    background-color: #77777739;
     border-radius: 20px;
     margin-right: 10px;
     font-size: 1.25em;
@@ -89,7 +89,7 @@
     background-color: transparent;
     color: #fff;
     border-radius: 50%;
-    border:1px solid yellow;
+    border:1px solid ;
     cursor: pointer;
     position:relative;
     top: 75px;

@@ -14,12 +14,13 @@ const CardBox = ({ title, extendedText }) => {
   };
 
   return (
-    <div className={`card-box${isExtended ? ' extended' : ''}`}>
+    <div className={`card-box${isExtended ? ' extended' : ''}` } id="accent-outline">
       <div className="card-header">
         <input
           type="checkbox"
           checked={isChecked}
           onChange={handleCheckboxChange}
+          id='accent-outline'
         />
         <h3>{title}</h3>
         <button className="toggle-btn" onClick={toggleExtended}>

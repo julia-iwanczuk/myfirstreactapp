@@ -2,10 +2,13 @@ import './App.css';
 import { Link } from 'react-router-dom';
 import React from 'react';
 import back from "./pictures/back.png";
+import backbr from "./pictures/back-br.png";
+
 import Carousel from './Carousel';
 import more from './pictures/more.png';
+import morebr from './pictures/more-br.png';
 
-function Learn() {
+function Learn({mode}) {
 
     const content1 = [
         { text: 'Staff Disability Advice Service', link: 'https://www.ed.ac.uk/health-safety/staff-disability-advice-service/accessing-the-staff-disability-advice-service' },
@@ -27,9 +30,9 @@ function Learn() {
         <div>
             <div className='head-learn'>
                 <Link to='/teach' className='back'>
-                    <img src={back} alt="back"/>
+                    <img src={mode==='b'?backbr:back} alt="back"/>
                 </Link>
-                <img src={more} className='icon-top'/>
+                <img src={mode==='b'?morebr:more} className='icon-top'/>
                 <h3 className='name'>Resources for further learning about accessibility</h3>
             </div>
             <h2 className='carousel-title'>Accessible content creation guidelines</h2>

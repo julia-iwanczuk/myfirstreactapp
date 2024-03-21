@@ -1,18 +1,16 @@
 import React, {useState} from "react";
 import "./App.css";
 import { Link } from "react-router-dom";
-import mode from "./Mode";
 
 import back from "./pictures/back.png";
 import message from './pictures/message.png';
+import backbr from "./pictures/back-br.png";
+import messagebr from './pictures/message-br.png';
 import CarouselPrompt from "./CarouselPrompt";
 import MessageGPT from "./MessageGpt";
 
-function Message() {
-    
-    if (mode === "n") {
-        console.log("night mode!");
-    }
+function Message({mode}) {
+
 
     const content1 = [
         { text: 'Problem with accessing materials.', prompt:"Write an email to a lecturer called NAME, to inform them I cannot access MATERIAL_NAME."},
@@ -56,9 +54,9 @@ function Message() {
         <>
             <div className='head-support'>
                 <Link to='/student' className='back'>
-                    <img src={back} alt="back"/>
+                    <img src={mode==='b'?backbr:back} alt="back"/>
                 </Link>
-                <img src={message} className='icon-top'/>
+                <img src={mode==='b'?messagebr:message} className='icon-top'/>
                 <h3 className='name'>Generating contents of a message to a member of staff.</h3>
             </div>
             <div>

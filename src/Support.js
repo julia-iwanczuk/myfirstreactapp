@@ -2,10 +2,13 @@ import './App.css';
 import { Link } from 'react-router-dom';
 import React from 'react';
 import back from "./pictures/back.png";
+import backbr from "./pictures/back-br.png";
 import Carousel from './Carousel';
 import support from './pictures/support.png';
+import supportbr from './pictures/support-br.png';
 
-function Support({ page_path }) {
+
+function Support({ page_path, mode }) {
 
     const content1 = [
         { text: 'Staff Disability Advice Service', link: 'https://www.ed.ac.uk/health-safety/staff-disability-advice-service/accessing-the-staff-disability-advice-service',
@@ -33,9 +36,9 @@ function Support({ page_path }) {
         <div>
             <div className='head-support'>
                 <Link to={`/${page_path}`} className='back'>
-                    <img src={back} alt="back"/>
+                    <img src={mode==='b'? backbr :back} alt="back"/>
                 </Link>
-                <img src={support} className='icon-top'/>
+                <img src={mode==='b'?supportbr:support} className='icon-top'/>
                 <h3 className='name' id='accent'>Support offered at The University of Edinburgh.</h3>
             </div>
             <h2 className='carousel-title'>University Disability and Learning Service</h2>

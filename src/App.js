@@ -15,27 +15,30 @@ import GuideAudio from './GuideAudio.js';
 import GuidePic from './GuidePic.js';
 import Message from './Message.js';
 
-function App({add, low, addLS, lowLS, addLH, lowLH, chFont, colorScheme }) {
+
+function App({mode,add, low, addLS, lowLS, addLH, lowLH, chFont, colorScheme }) {
 
     return (
-        <Router>
-            <Navbar add={add} low={low} addLS={addLS} lowLS={lowLS} addLH={addLH} lowLH={lowLH} chFont={chFont} colorScheme={colorScheme} />
-            <Routes>
-                <Route path="/" element={<Choose/>} exact/>
-                <Route path="/teach" element={<Teach />} />
-                <Route path="/support-teach" element={<Support page_path={"./teach"}/>} />   
-                <Route path="/support-student" element={<Support page_path={"./student"}/>} />   
-                <Route path="/learn" element={<Learn />} />
-                <Route path="/checkmat" element={<CheckMaterials />} />
-                <Route path="/student" element={<Student />} />
-                <Route path="/guidetext" element={<GuideText />} />
-                <Route path="/guideslides" element={<GuideSlides />} />
-                <Route path="/guidevideo" element={<GuideVideo />} />
-                <Route path="/guideaudio" element={<GuideAudio />} />
-                <Route path="/guidepic" element={<GuidePic />} />
-                <Route path="/message" element={<Message />}/>
-            </Routes>
-        </Router>
+
+            <Router>
+            <Navbar mode={mode} add={add} low={low} addLS={addLS} lowLS={lowLS} addLH={addLH} lowLH={lowLH} chFont={chFont} colorScheme={colorScheme} />
+                <Routes>
+                    <Route path="/" element={<Choose mode={mode} />} exact/>
+                    <Route path="/teach" element={<Teach mode={mode} />} />
+                    <Route path="/support-teach" element={<Support page_path={"./teach"} mode={mode}/>} />   
+                    <Route path="/support-student" element={<Support page_path={"./student"} mode={mode}/>} />   
+                    <Route path="/learn" element={<Learn mode={mode}/>} />
+                    <Route path="/checkmat" element={<CheckMaterials mode={mode}/>} />
+                    <Route path="/student" element={<Student mode={mode}/>} />
+                    <Route path="/guidetext" element={<GuideText mode={mode}/>} />
+                    <Route path="/guideslides" element={<GuideSlides mode={mode}/>} />
+                    <Route path="/guidevideo" element={<GuideVideo mode={mode}/>} />
+                    <Route path="/guideaudio" element={<GuideAudio mode={mode}/>} />
+                    <Route path="/guidepic" element={<GuidePic mode={mode} />} />
+                    <Route path="/message" element={<Message mode={mode}/>}/>
+                </Routes>
+            </Router>
+
     );
 }
 

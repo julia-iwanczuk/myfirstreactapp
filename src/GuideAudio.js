@@ -2,13 +2,15 @@ import React from "react";
 import "./App.css";
 import back from "./pictures/back.png";
 import audio from './pictures/audio.png';
+import backbr from "./pictures/back-br.png";
+import audiobr from './pictures/audio-br.png';
 import CardBox from './CardBox';
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Document, Page, pdfjs } from 'react-pdf';
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/legacy/build/pdf.worker.min.js`;
 
-function GuideAudio() {
+function GuideAudio({mode}) {
 
   const rules = [
     {title: "Something", extended: "nckwjenknw" },
@@ -63,9 +65,9 @@ const [numPages, setNumPages] = useState(null);
         <>
             <div className='head-check'>
                 <Link to='/checkmat' className='back'>
-                        <img src={back} alt="back"/>
+                        <img src={mode==='b'?backbr:back} alt="back"/>
                 </Link>
-                <img src={audio} className='icon-top'/>
+                <img src={mode==='b'?audiobr:audio} className='icon-top'/>
                 <h3 className='name'>Check your audio materials</h3>
             </div>
 
@@ -77,7 +79,7 @@ const [numPages, setNumPages] = useState(null);
                 onDragLeave={handleDragLeave}
                 onDrop={handleDrop}
                 >
-                <div className="inner-window">
+                <div className="inner-window" id='accent-outline'>
                   <h2>Drop your files here or search local library</h2>
                     <input type="file" onChange={handleFileInput} webkitdirectory="" directory="" />
                         
@@ -90,7 +92,7 @@ const [numPages, setNumPages] = useState(null);
                     </div>
                         )}
                         
-                <button onClick={openFileDialog}>
+                <button onClick={openFileDialog} id='accent-background'>
               Search local library
             </button>
           </div>
@@ -106,7 +108,7 @@ const [numPages, setNumPages] = useState(null);
        <div className="onlinetools">
           <h2 className="guide-title">Online tools:</h2>
           {tools.map((item) => (
-            <a href={item.link}>{ item.title}</a>
+            <a href={item.link} id="main-color">{ item.title}</a>
         ))}
         </div>
       </>

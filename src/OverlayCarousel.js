@@ -15,18 +15,18 @@ const OverlayCarousel = ({steps}) => {
             </div>
             {showOverlay && (
                 <div className="overlay-background">
-                    <div className="overlay-content">
+                    <div className="overlay-content" id='main-color-accent-outline-main-background'>
                         <div >
                             <h2 className='overlay-head'>You will be able to:</h2>
                             <button onClick={toggleOverlay} className='x'>&#x2715;</button>
                         </div>
-                        <hr />
+                        <hr id='accent-outline'/>
                         <ul>
                             {steps.map((sentence, index) => (
                                 sentence.trim() !== '' ? (
                                     <li key={index}>{sentence}</li>
                                 ) : (
-                                    <hr key={index} />
+                                    <hr key={index} id='accent-outline'/>
                                 )
                             ))}
                         </ul>

@@ -1,5 +1,5 @@
 .card-box {
-    border: 2px solid yellow;
+    border: 2px solid;
     border-radius: 10px;
     margin-left: 100px;
     margin-bottom: 20px;
@@ -46,6 +46,6 @@
     margin-left: 20px;
     position: relative;
     top:5px;
-    outline: 2px solid yellow;
+    outline: 2px solid;
     accent-color: yellow;
   }

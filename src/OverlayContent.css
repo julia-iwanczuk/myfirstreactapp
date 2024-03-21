@@ -16,7 +16,6 @@
 }
 
 .overlay-content {
-    background-color: #000;
     padding: 10px;
     border-radius: 8px;
     border:2px solid;
@@ -34,7 +33,7 @@
 .x{
     position: relative;
     left:120px;
-    font-size: 2.1875em;
+    font-size: 2em;
     cursor:pointer;
     color: yellow;
 }

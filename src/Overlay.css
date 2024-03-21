@@ -42,10 +42,9 @@
 }
 
 .overlay-content {
-    background-color: #000;
     padding: 10px;
     border-radius: 8px;
-    border:2px solid yellow;
+    border:2px solid ;
     text-align: left;
     width:350px;
     z-index: 9999;
