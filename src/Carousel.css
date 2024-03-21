@@ -73,17 +73,16 @@
 }
 
 .active {
-    background-color:yellow;
+    background-color:rgba(0, 0, 0, 0.406);
     cursor: default;
 }
 
-.overlay_icon {
+.overlay_icon_carousel {
     width: 30px;
     height: 30px;
     background-color: transparent;
-    color: #fff;
     border-radius: 50%;
-    border:1px solid yellow;
+    border:1px solid;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,7 +92,7 @@
     left:45%;
 }
 
-.overlay_icon span{
+.overlay_icon_prompt span{
     font-size: 20px;
     background-color: transparent;
 }

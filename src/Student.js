@@ -34,7 +34,7 @@ return(
           <h3 id="main-color">find support</h3>
       </Link>
 
-      <Link to='/learn' className='option-teach'>
+      <Link to='/learn-student' className='option-teach'>
           <img src={mode==='b'?morebr:more} id="pic-option" alt="more" />
           <h3 id="main-color">learn more</h3>
       </Link>

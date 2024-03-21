@@ -23,7 +23,7 @@ const CardBox = ({ title, extendedText }) => {
           id='accent-outline'
         />
         <h3>{title}</h3>
-        <button className="toggle-btn" onClick={toggleExtended}>
+        <button className="toggle-btn" onClick={toggleExtended} id='main-color'>
           {isExtended ? '▲' : '▼'}
         </button>
       </div>

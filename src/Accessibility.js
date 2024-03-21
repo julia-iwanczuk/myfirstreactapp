@@ -18,7 +18,7 @@ function Accessibility({toggleOverlay, add, low, addLS, lowLS, addLH, lowLH, chF
     return (
         <>
             <div className='accessibility' id="accent-outline">
-                <button onClick={toggleOverlay} className='x' id='accent'>&#x2715;</button>
+                <button onClick={toggleOverlay} className='x-message' id='accent'>&#x2715;</button>
                 <div className='acc-opt'>
                     <h2>Font size</h2>
                     <button className='add-font' onClick={low} id="main-color">-</button>

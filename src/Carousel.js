@@ -40,7 +40,7 @@ const Carousel = ({ content }) => {
                     {content.map((item, index) => (
                         <div key={index} className="rectangle">
                         <a href={item.link} className='link' id="main-color">{item.text}</a>
-                            <div className="overlay_icon" id='main-color-accent-outline' tabIndex={0} onClick={() => toggleOverlay(item.steps)} onKeyDown={(event) => handleKeyDown(event, item.steps)} >
+                            <div className="overlay_icon_carousel" id='main-color-accent-outline' tabIndex={0} onClick={() => toggleOverlay(item.steps)} onKeyDown={(event) => handleKeyDown(event, item.steps)} >
                                 <span>i</span>
                             </div>
                     </div>
@@ -50,7 +50,7 @@ const Carousel = ({ content }) => {
                 <button className="arrow next" onClick={handleNext} id='accent-background'>&#10095;</button>
                 <div className="dots">
                     {[...Array(totalRectangles-2)].map((_, index) => (
-                        <span key={index} className={index === currentIndex ? 'dot active' : 'dot'} id='accent-background'></span>
+                        <span key={index} className={index === currentIndex ? 'dot active' : 'dot'} id={index === currentIndex ?'accent-background':""}></span>
                     ))}
                 </div>
             </div>

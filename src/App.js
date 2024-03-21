@@ -27,7 +27,8 @@ function App({mode,add, low, addLS, lowLS, addLH, lowLH, chFont, colorScheme }) 
                     <Route path="/teach" element={<Teach mode={mode} />} />
                     <Route path="/support-teach" element={<Support page_path={"./teach"} mode={mode}/>} />   
                     <Route path="/support-student" element={<Support page_path={"./student"} mode={mode}/>} />   
-                    <Route path="/learn" element={<Learn mode={mode}/>} />
+                    <Route path="/learn-teach" element={<Learn page_path={"./teach"} mode={mode} />} />
+                    <Route path="/learn-student" element={<Learn page_path={"./student"} mode={mode}/>} />
                     <Route path="/checkmat" element={<CheckMaterials mode={mode}/>} />
                     <Route path="/student" element={<Student mode={mode}/>} />
                     <Route path="/guidetext" element={<GuideText mode={mode}/>} />

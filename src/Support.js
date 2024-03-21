@@ -25,11 +25,16 @@ function Support({ page_path, mode }) {
         steps: ["access a self-referral form for staff.", "find workplace adjustment form and guidance."] }
     ];
     const content2 = [
-        { text: 'Staff Counselling Service', link: 'https://staff-counselling.ed.ac.uk/' },
-        { text: 'Online Training for Staff', link: 'https://student-counselling.ed.ac.uk/supporting-students/online-training-resource-for-staff' },
-        { text: 'Supporting your students', link: 'https://student-counselling.ed.ac.uk/supporting-students/staff' },
-        { text: 'Crisis Support', link: 'https://student-counselling.ed.ac.uk/other-services-external-organisations/crisis-support' },
-        { text: 'Special circumstances guidelines ', link: 'https://www.ed.ac.uk/student-administration/extensions-special-circumstances/staff' },
+        { text: 'Staff Counselling Service', link: 'https://staff-counselling.ed.ac.uk/',
+        steps: ["access a self-referral form for staff.", "find workplace adjustment form and guidance."] },
+        { text: 'Online Training for Staff', link: 'https://student-counselling.ed.ac.uk/supporting-students/online-training-resource-for-staff',
+        steps: ["access a self-referral form for staff.", "find workplace adjustment form and guidance."] },
+        { text: 'Supporting your students', link: 'https://student-counselling.ed.ac.uk/supporting-students/staff',
+        steps: ["access a self-referral form for staff.", "find workplace adjustment form and guidance."] },
+        { text: 'Crisis Support', link: 'https://student-counselling.ed.ac.uk/other-services-external-organisations/crisis-support',
+        steps: ["access a self-referral form for staff.", "find workplace adjustment form and guidance."] },
+        { text: 'Special circumstances guidelines ', link: 'https://www.ed.ac.uk/student-administration/extensions-special-circumstances/staff',
+        steps: ["access a self-referral form for staff.", "find workplace adjustment form and guidance."] },
     ];
 
     return (

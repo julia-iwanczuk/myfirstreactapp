@@ -12,7 +12,7 @@ function OverlayContent({ steps, toggleOverlay }) {
             <div className="overlay-content">
                 <div >
                     <h2 className='overlay-head'>You will be able to:</h2>
-                    <button onClick={toggleOverlay} tabIndex={0} onKeyDown={(event) => handleKeyDown(event, steps)} className='x'>&#x2715;</button>
+                    <button onClick={toggleOverlay} tabIndex={0} onKeyDown={(event) => handleKeyDown(event, steps)} className='x-map' id="accent">&#x2715;</button>
                 </div>
                 <hr />
                 <ul>

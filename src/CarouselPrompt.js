@@ -29,18 +29,18 @@ function CarouselPrompt({ content, toggleOverlay }) {
                     {content.map((item, index) => (
                         <div key={index} className="rectangle">
                         <p className='prompt'>{item.text}</p>
-                            <div className="overlay_icon" tabIndex={0} onClick={() => toggleOverlay(item.prompt)} onKeyDown={(event) => handleKeyDown(event, item.prompt)} >
+                            <div className="overlay_icon_prompt" id='main-color-accent-outline' tabIndex={0} onClick={() => toggleOverlay(item.prompt)} onKeyDown={(event) => handleKeyDown(event, item.prompt)} >
                                 <span className='plus'>+</span>
                             </div>
                     </div>
                     ))}
                 </div>
-                <button className="arrow prev" onClick={handlePrev}>&#10094;</button>
-                <button className="arrow next" onClick={handleNext}>&#10095;</button>
+                <button className="arrow prev" onClick={handlePrev} id="accent-background">&#10094;</button>
+                <button className="arrow next" onClick={handleNext} id="accent-background">&#10095;</button>
                 <div className="dots">
                     {[...Array(totalRectangles-2)].map((_, index) => (
-                        <span key={index} className={index === currentIndex ? 'dot active' : 'dot'}></span>
-                    ))}
+                        <span key={index} className={index === currentIndex ? 'dot active' : 'dot'} id={index === currentIndex ?'accent-background':""}></span>
+                        ))}
                 </div>
             </div>
         </div>

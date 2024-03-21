@@ -83,18 +83,22 @@
     cursor: default;
 }
 
-.overlay_icon {
-    width: 25px;
-    height: 25px;
+.overlay_icon_prompt {
+    width: 30px;
+    height:30px;
     background-color: transparent;
-    color: #fff;
     border-radius: 50%;
     border:1px solid ;
     cursor: pointer;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
     position:relative;
-    top: 75px;
-    background-color: transparent;
+    top:50px;
+    left:45%;
     font-size: 1.875em;
+
 }
 .plus{
     padding-bottom: 5px;
