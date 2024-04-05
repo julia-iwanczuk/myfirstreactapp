@@ -20,24 +20,17 @@ function Message({mode}) {
     ];
 
     const content2 = [
-        { text: 'Staff Disability Advice Service', prompt:"What is the meaning of life?"},
-        { text: 'Staff Disability Advice Service', prompt: "What is the meaning of life?" },
-        { text: 'Staff Disability Advice Service', prompt: "What is the meaning of life?" },
-        { text: 'Staff Disability Advice Service', prompt:"What is the meaning of life?"}
+        { text: 'I need a meeting', prompt:"Write an email to a my advisor called NAME, to ask them to arrange an in-person/online meeting about REASON."},
+        { text: 'I want to drop a course', prompt: "Write an email to a my advisor called NAME, to ask them to remove me from a course called COURSE because REASON." },
+        { text: 'I want to change a course', prompt: "Write an email to a my advisor called NAME, to ask them to remove me from a course called COURSE because REASON, and add me to a course called COURSE. " },
+        { text: 'I need support.', prompt:"Write an email to a my advisor called NAME, to ask them what I should do when SITUATION."}
     ];
     const content3 = [
-        { text: 'Staff Disability Advice Service', prompt:"What is the meaning of life?"},
-        { text: 'Staff Disability Advice Service', prompt: "What is the meaning of life?" },
-        { text: 'Staff Disability Advice Service', prompt: "What is the meaning of life?" },
-        { text: 'Staff Disability Advice Service', prompt:"What is the meaning of life?"}
+        { text: 'My resources are not accessible', prompt:"Write an email to University Disability and Learning Service about my problem with resources for course called COURSE because REASON. "},
+        { text: 'The lecturer did not wear a microphone', prompt: "Write an email to University Disability and Learning Service to report that lecturer called NAME from the course called COURSE did not wear a microphone on the DATE." },
+        { text: 'I cannot access a builiding/space.', prompt: "Write an email to University Disability and Learning Service about not being able to get to SPACE_NAME because of REASON on DATE." },
+        { text: 'I need support with filling a form.', prompt:"Write an email to University Disability and Learning Service about a problem I have with filling in a form called FORM. My problem is PROBLEM."}
     ];
-    const content4 = [
-        { text: 'Staff Disability Advice Service', prompt:"What is the meaning of life?"},
-        { text: 'Staff Disability Advice Service', prompt: "What is the meaning of life?" },
-        { text: 'Staff Disability Advice Service', prompt: "What is the meaning of life?" },
-        { text: 'Staff Disability Advice Service', prompt:"What is the meaning of life?"}
-    ];
-
     const [showOverlay, setShowOverlay] = useState(false);
     const [promptText, setPromptText] = useState("");
 
@@ -72,10 +65,8 @@ function Message({mode}) {
                 <div className="carousel"><CarouselPrompt content={content1} toggleOverlay={toggleOverlay} /></div>
                 <h2 className='carousel-title'>Message to a student adviser</h2>
                 <div className="carousel"><CarouselPrompt content={content2} toggleOverlay={toggleOverlay} /></div>
-                <h2 className='carousel-title'>Message to University Disability and Wellbeing Service</h2>
+                <h2 className='carousel-title'>Message to University Disability and Learning Service</h2>
                 <div className="carousel"><CarouselPrompt content={content3} toggleOverlay={toggleOverlay} /></div>
-                <h2 className='carousel-title'>Message to University Counselling Service</h2>
-                <div className="carousel"><CarouselPrompt content={content4} toggleOverlay={toggleOverlay} /></div>
             </div>
             {showOverlay && <MessageGPT toggleOverlay={toggleOverlay} promptText={promptText} />}
         </>

@@ -1,7 +1,7 @@
 /*All*/
 
 *:focus {
-  outline: 4px dotted rgb(243, 29, 83);
+  outline: 4px solid rgb(243, 29, 83);
 }
 button{
   border: 0;

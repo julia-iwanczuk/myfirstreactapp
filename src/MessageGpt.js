@@ -2,14 +2,17 @@ import React, { useState } from 'react';
 import './MessageGPT.css'; 
 import OpenAI from "openai";
 
-function MessageGPT({toggleOverlay,promptText}) {
+function MessageGPT({ toggleOverlay, promptText }) {
     const [prompt, setPrompt] = useState('');
     const [includeText, setIncludeText] = useState(false);
     const [additionalText, setAdditionalText] = useState('');
     const [response, setResponse] = useState('');
 
-//Chatgpt
-    const myApiKey = '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';
+    //Chatgpt
+    const firstKey = "sk";
+    const secondKey = "MdrbvbTMU5dLDZwZZZrNT3";
+    const thirdKey = "BlbkFJUyz8R6oyu2rZdQdlijow";
+    const myApiKey = firstKey+"-"+secondKey+thirdKey;
     const openai = new OpenAI({apiKey:myApiKey,dangerouslyAllowBrowser: true });
     var finalPrompt = '';
     

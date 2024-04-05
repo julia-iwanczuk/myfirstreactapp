@@ -39,7 +39,7 @@ const Carousel = ({ content }) => {
                 <div className="slider-content" style={{ transform: `translateX(-${currentIndex * (203 / rectanglesPerPage)}%)`, width: `${6 * (98 / rectanglesPerPage)}%` }}>
                     {content.map((item, index) => (
                         <div key={index} className="rectangle">
-                        <a href={item.link} className='link' id="main-color">{item.text}</a>
+                        <a href={item.link} className='link' target="_blank" id="main-color">{item.text}</a>
                             <div className="overlay_icon_carousel" id='main-color-accent-outline' tabIndex={0} onClick={() => toggleOverlay(item.steps)} onKeyDown={(event) => handleKeyDown(event, item.steps)} >
                                 <span>i</span>
                             </div>
