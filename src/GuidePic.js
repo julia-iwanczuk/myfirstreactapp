@@ -13,12 +13,14 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/l
 function GuidePic({mode}) {
 
   const rules = [
-    {title: "Something", extended: "nckwjenknw" },
-    {title: "Another test", extended: "behdebhebdehbdehdbe"}
+    {title: "Make sure the picture has a high contrast between the colours.", extended: "The combination of colors between the foreground and the background must be sufficiently strong to be seen by monochromatic monitors and users with colourblindness." },
+    { title: "Make the image scalable.", extended: "The image should be scalable by virtual lenses up to twie its original size, and keep the quality of presented content." },
+    { title: "Provide at least one alternative format of the image's content.", extended: "Possible alternative formats include alternative text, grayscale image, simplified image for touch printing etc." },
+    {title:"If it is a chart or a graph, always add descriptive text.", extended:"Include variable's locations and presented results."}
   ];
   const tools = [
-    { title:"Text converter", link:"https://textconverter.com/split-text-into-paragraphs"},
-    {title:"Braille converter", link:"https://www.brailletranslator.org/"}
+    { title:"Graph to Text Generator", link:"https://www.yeschat.ai/gpts-2OToO2uW1L-Graph-Text-Generator"},
+    {title:"Contrast Checker", link:"https://contrastchecker.com/"}
   ];
 
 const [dragging, setDragging] = useState(false);

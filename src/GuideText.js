@@ -13,8 +13,12 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/l
 function GuideText({mode}) {
 
   const rules = [
-    {title: "Something", extended: "nckwjenknw" },
-    {title: "Another test", extended: "behdebhebdehbdehdbe"}
+    {title: "Don't write long walls of text if not necessary.", extended: "Use bullet point lists instead or break the text into segments." },
+    { title: "Don't use italic, underlines or uppercase if you don't have to.", extended: "This may be unreadable to dyslexic students." },
+    { title: "Make sure your text is not in an image format.", extended: "The text should be reachable by screen readers." },
+    { title: "Use at most 80 characters per line.", extended: "More characters can cause exhausting eye movement." },
+    { title: "Do not use justified or centrally aligned text.", extended: "Always present text as left-aligned." },
+    {title:"Always clarify abbreviations and acronyms.", extended:"Try doing that on their first ocurence."}
   ];
   const tools = [
     { title:"Text converter", link:"https://textconverter.com/split-text-into-paragraphs"},

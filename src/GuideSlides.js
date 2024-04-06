@@ -13,12 +13,13 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/l
 function GuideSlides({mode}) {
 
   const rules = [
-    {title: "Something", extended: "nckwjenknw" },
-    {title: "Another test", extended: "behdebhebdehbdehdbe"}
+    {title: "Avoid long sentences.", extended: "Limit the amount of words in each line and the amount of lines on each slide." },
+    { title: "Use plain English.", extended: "The slides should be quick and easy to read. Omit unnecessary abbrieviations." },
+    { title: "Use clear headers and titles.", extended: "Use header hierarchy and make sure each slide has a 'main thought'." },
+    {title: "Add alternative text for all visual elements.", extended:"Visual elements include pictures, graphs and charts."}
   ];
   const tools = [
-    { title:"Text converter", link:"https://textconverter.com/split-text-into-paragraphs"},
-    {title:"Braille converter", link:"https://www.brailletranslator.org/"}
+    { title:"Accessible content in Prezi", link:"https://support.prezi.com/hc/en-us/articles/360046479113-Creating-accessible-content-in-Prezi-Design"}
   ];
 
 const [dragging, setDragging] = useState(false);

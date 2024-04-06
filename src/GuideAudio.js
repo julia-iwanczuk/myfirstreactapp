@@ -13,12 +13,13 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/l
 function GuideAudio({mode}) {
 
   const rules = [
-    {title: "Something", extended: "nckwjenknw" },
-    {title: "Another test", extended: "behdebhebdehbdehdbe"}
+    {title: "Always provide the student with visual alternative text.", extended: "The text should be a direct reflection of what is said in the audio." },
+    { title: "Make the controls clear and visible.", extended: "The controls should include volume control, pause, play and stop." },
+    {title:"Audio content should have subtitles, captions or complete description.", extended:"The user should be able to synchronise the subtitles with audio."}
   ];
   const tools = [
-    { title:"Text converter", link:"https://textconverter.com/split-text-into-paragraphs"},
-    {title:"Braille converter", link:"https://www.brailletranslator.org/"}
+    { title:"Audio to Text", link:"https://www.veed.io/tools/audio-to-text"},
+    {title:"Transcribe your recording by Microsoft", link:"https://support.microsoft.com/en-gb/office/transcribe-your-recordings-7fc2efec-245e-45f0-b053-2a97531ecf57"}
   ];
 
 const [dragging, setDragging] = useState(false);

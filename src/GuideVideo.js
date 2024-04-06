@@ -13,12 +13,13 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/l
 function GuideVideo({mode}) {
 
   const rules = [
-    {title: "Something", extended: "nckwjenknw" },
-    {title: "Another test", extended: "behdebhebdehbdehdbe"}
+    {title: "Add clear subtitles to your videos.", extended: "If the subtitles are auto-generated, make sure to check them before publishing the material." },
+    { title: "Add a transcript of the video's content.", extended: "The transcript should reflect exactly what was said in the video." },
+    { title: "The sound in the video should be clear and uninterrupted.", extended: "The student should be able to understand everything that's said without the need to repeat." },
+    {title: "If you're using slides in the video, make sure they are synchronised with the video.", extended:"The student should be able to follow the video and slides together, as well as the script."}
   ];
   const tools = [
-    { title:"Text converter", link:"https://textconverter.com/split-text-into-paragraphs"},
-    {title:"Braille converter", link:"https://www.brailletranslator.org/"}
+    { title:"Video to Text", link:"https://www.veed.io/tools/video-to-text"}
   ];
 
 const [dragging, setDragging] = useState(false);

@@ -24,54 +24,31 @@ function CheckMaterials({mode}) {
     const overlay1 = [
         'add text in its plain form or pdf or Word.',
         'check if it adheres to relevant guidelines.',
-        'access web tools helping you apply accessibility adjustments',
-        '',
-        'link it to other materials you have uploaded.',
-        'link it to a specific unit.',
+        'access web tools helping you apply accessibility adjustments'
     ];
 
     const overlay2 = [
         'add slides in PowerPoint or pdf or Keynote.',
         'check if they adhere to relevant guidelines.',
-        'access web tools helping you apply accessibility adjustments.',
-        '',
-        'link the slides to other materials you have uploaded.',
-        'link the slides to a specific unit.'
+        'access web tools helping you apply accessibility adjustments.'
     ];
 
     const overlay3 = [
         'add video in mp4 or mov or YouTube format.',
         'check if it adheres to relevant guidelines.',
-        'access web tools helping you apply accessibility adjustments.',
-        '',
-        'add subtitles.',
-        'add script.',
-        '',
-        'link it to other materials you have uploaded.',
-        'link it to a specific unit.',
+        'access web tools helping you apply accessibility adjustments.'
     ];
 
     const overlay4 = [
         'add audio recording in mp3 or wav format.',
         'check if it adheres to relevant guidelines.',
-        'access web tools helping you apply accessibility adjustments.',
-        '',
-        'add script.',
-        '',
-        'link it to other materials you have uploaded.',
-        'link it to a specific unit.',
+        'access web tools helping you apply accessibility adjustments.'
     ];
 
     const overlay5 = [
         'add a picture/graph in jpg or png format.',
         'check if it adheres to relevant guidelines.',
-        'access web tools helping you apply accessibility adjustments.',
-        '',
-        'add alternative text.',
-        'add a description.',
-        '',
-        'link it to other materials you have uploaded.',
-        'link it to a specific unit.',
+        'access web tools helping you apply accessibility adjustments.'
     ];
 
 
